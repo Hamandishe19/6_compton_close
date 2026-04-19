@@ -1,0 +1,32 @@
+/* Modern design with glassmorphism effects */
+body {
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#numericalMode p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+canvas {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
