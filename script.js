@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch('https://api.thingspeak.com/channels/3348815/feeds.json?api_key=UAISGE3RC2SPYFXG')
             .then(response => response.json())
             .then(data => {
-                const latest = data.feeds[0];
+                const feeds = data.feeds;
+                const latest = feeds[feeds.legnth - 1];
                 const temperature = parseFloat(latest.field1);
                 const humidity = parseFloat(latest.field2);
 
