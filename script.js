@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then(data => {
                 const feeds = data.feeds;
-                const latest = feeds[feeds.legnth - 1];
+                const latest = feeds[feeds.length - 1]; // Use the last entry for the latest data
                 const temperature = parseFloat(latest.field1);
                 const humidity = parseFloat(latest.field2);
 
