@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(fetchData, 15000);
 
     function fetchData() {
-        fetch('https://api.thingspeak.com/channels/3348815/feeds.json?api_key=UAISGE3RC2SPYFXG')
+        fetch('https://api.thingspeak.com/channels/3348815/feeds.json?api_key=1EURYC1PK4DPH8UM')
             .then(response => response.json())
             .then(data => {
                 const feeds = data.feeds;
